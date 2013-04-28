@@ -30,9 +30,8 @@ Just copy the files to
 
 If you are using Arch Linux, it provides a PKGBUILD for these files. All you need to do here is to run the following commands.
 
-<code>
-mkdir /tmp/backuppc-httpd
+<pre><code>mkdir /tmp/backuppc-httpd
 cd /tmp/backuppc-httpd
 wget https://aur.archlinux.org/packages/ba/backuppc-httpd/PKGBUILD
 makepkg -si
-</code>
+</code></pre>

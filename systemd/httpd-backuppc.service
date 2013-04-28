@@ -1,0 +1,15 @@
+[Unit]
+Description=BackupPC Apache Web Server
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking	
+#PIDFile=/run/httpd-backuppc.pid
+ExecStart=/usr/sbin/apachectl -f /etc/httpd/conf/backuppc.conf
+#ExecStop=/usr/sbin/apachectl graceful-stop
+#ExecReload=/usr/sbin/apachectl graceful
+#PrivateTmp=true
+#LimitNOFILE=infinity
+
+[Install]
+WantedBy=multi-user.target
